@@ -1,0 +1,14 @@
+select * from product
+00:00:26
+insert into product (name, cost) values ('Banana', 30);
+00:00:06
+insert into product (name, cost) values ('Orange', 15);
+23:59:53
+insert into product (name, cost) values ('Apple', 20);
+23:59:38
+create table product ( id serial unique not null, name char(20) not null, cost integer check(cost > -1) );
+23:58:27
+
+1	"Apple               "	20
+2	"Orange              "	15
+3	"Banana              "	30
