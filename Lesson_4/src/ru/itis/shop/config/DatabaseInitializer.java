@@ -24,7 +24,6 @@ public class DatabaseInitializer {
     private static void createTables(Connection conn) throws SQLException {
         try (Statement stmt = conn.createStatement()) {
 
-            // Таблица пользователей
             String createUsersTable = """
                 create table account (
                     id varchar(36) primary key,
