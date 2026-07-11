@@ -41,7 +41,6 @@ public class DatabaseInitializer {
     private static void insertInitialData(Connection conn) throws SQLException {
         try (Statement stmt = conn.createStatement()) {
 
-
             String checkData = "select count(*) from account";
             var rs = stmt.executeQuery(checkData);
             rs.next();
